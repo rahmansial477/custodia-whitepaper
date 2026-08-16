@@ -31,7 +31,7 @@ This is the architectural centerpiece of the protocol.
 Each event stores a `resaleCapBps` value (basis points, denominator `10000`) at creation time. A cap of `11000` means a ticket may never resell for more than 110% of its current holder's purchase price.
 
 ### 3.2 Why Purchase Price, Not Face Value
-The cap is computed against `ticket.purchasePrice` — the amount the *current* holder actually paid — not the original tier price. This is deliberate:
+The cap is computed against `ticket.purchasePrice`  the amount the *current* holder actually paid — not the original tier price. This is deliberate:
 
 ```solidity
 uint256 maxAllowed = (t.purchasePrice * e.resaleCapBps) / BPS_DENOMINATOR;
