@@ -164,7 +164,7 @@ No function permits an organizer to act on another organizer's event — every o
 
 ## 13. Summary
 
-Custodia's central design claim is narrow and verifiable: **a ticket cannot be resold above its organizer-defined cap, under any code path, because the cap check and the transfer are the same atomic operation.** Every other feature — tiering, waitlists, check-in modes, refunds — is built around preserving that guarantee while giving organizers enough flexibility to run real events without needing to trust a platform's internal policy enforcement.
+Custodia's central design claim is narrow and verifiable: **a ticket cannot be resold above its organizer-defined cap, under any code path, because the cap check and the transfer are the same atomic operation.** Every other feature  tiering, waitlists, check-in modes, refunds — is built around preserving that guarantee while giving organizers enough flexibility to run real events without needing to trust a platform's internal policy enforcement.
 
 ---
 
