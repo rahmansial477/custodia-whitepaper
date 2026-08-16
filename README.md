@@ -19,7 +19,7 @@ Custodia is a single-contract protocol (`Custodia.sol`, Solidity `^0.8.20`) depl
 - **Tickets** — individually tracked ownership records (not a standard ERC-721, described in §6)
 - **Waitlist Entries** — per-event queues activated once a tier sells out
 
-All state transitions — purchase, resale, check-in, cancellation, refund, and waitlist promotion — are handled by dedicated external functions with role-scoped access control (`onlyOwner`, `onlyOrganizer`, `eventExists` modifiers).
+All state transitions — purchase, resale, check-in, cancellation, refund, and waitlist promotion  are handled by dedicated external functions with role-scoped access control (`onlyOwner`, `onlyOrganizer`, `eventExists` modifiers)
 
 ---
 
