@@ -6,7 +6,7 @@
 
 ## 1. Abstract
 
-Ticket scalping persists because resale-price enforcement has historically lived inside centralized platform policy rather than in the transaction layer itself. Custodia removes that gap: the maximum allowable resale price for any ticket is computed and enforced by the smart contract at the moment of transfer, making unauthorized markups a reverted transaction rather than a policy violation. This document describes the system architecture, the on-chain mechanisms that make the anti-scalping guarantee hold, and the technical tradeoffs made in the current implementation.
+Ticket scalping persists because resale-price enforcement has historically lived inside centralized platform policy rather than in the transaction layer itself. Custodia removes that gap: the maximum allowable resale price for any ticket is computed and enforced by the smart contract at the moment of transfer, making unauthorized markups a reverted transaction rather than a policy violation. This document describes the system architecture the on-chain mechanisms that make the anti-scalping guarantee hold, and the technical tradeoffs made in the current implementation.
 
 ---
 
