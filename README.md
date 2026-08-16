@@ -38,7 +38,7 @@ uint256 maxAllowed = (t.purchasePrice * e.resaleCapBps) / BPS_DENOMINATOR;
 require(msg.value <= maxAllowed, "Exceeds resale price cap");
 ```
 
-If the cap were pinned to original face value, a ticket could theoretically compound markups across repeated resales without ever tripping a check relative to its most recent sale. Anchoring to current purchase price means every single resale  no matter how many times a ticket changes hands — is capped relative to what the last person actually paid, closing that loophole.
+If the cap were pinned to original face value, a ticket could theoretically compound markups across repeated resales without ever tripping a check relative to its most recent sale. Anchoring to current purchase price means every single resale  no matter how many times a ticket changes hands  is capped relative to what the last person actually paid, closing that loophole.
 
 ### 3.3 Enforcement Point
 The check occurs inside `resellTicket()`, before any funds move and before ownership updates. There is no separate "approval" or "listing" step that could be bypassed — the price check and the transfer are atomic within a single transaction.
