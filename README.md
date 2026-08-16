@@ -62,7 +62,7 @@ function _autoOpenNextTier(uint256 _eventId, uint256 _justClosedIndex) internal 
 }
 ```
 
-This is called automatically at the tail of `buyTicket()` whenever a tier's `sold` count reaches its `totalSupply`. Organizers retain manual override via `setTierOpen()` for cases where auto-progression isn't desired (e.g. holding a tier back for a scheduled release time).
+This is called automatically at the tail of `buyTicket()` whenever a tier's `sold` count reaches its `totalSupply`. Organizers retain manual override via `setTierOpen()` for cases where auto-progression isn't desired (e.g. holding a tier back for a scheduled release time)
 
 ---
 
