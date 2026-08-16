@@ -75,7 +75,7 @@ When a tier is sold out, `joinWaitlist()` queues a buyer against a specific `(ev
 | `AutomaticTransfer` (0) | Organizer's call to `offerWaitlistSlot()` immediately mints the ticket to the waitlisted address, with payment matching tier price executed as part of the same transaction that promotes the entry. |
 | `TimeWindowOffer` (1) | The entry is marked `offered` with an `offerExpiresAt` timestamp (`block.timestamp + offerWindowSeconds`). The waitlisted user must then call `claimWaitlistOffer()` themselves before the window closes, paying the tier price directly. |
 
-This split exists because different event types have different fairness requirements — a free community meetup might prefer automatic distribution to minimize friction, while a high-demand paid event benefits from giving each waitlisted person a fair, bounded window to act before the slot passes to the next person in line.
+This split exists because different event types have different fairness requirements  a free community meetup might prefer automatic distribution to minimize friction, while a high-demand paid event benefits from giving each waitlisted person a fair, bounded window to act before the slot passes to the next person in line.
 
 ---
 
