@@ -28,7 +28,7 @@ All state transitions — purchase, resale, check-in, cancellation, refund, and 
 This is the architectural centerpiece of the protocol
 
 ### 3.1 Cap Definition
-Each event stores a `resaleCapBps` value (basis points, denominator `10000`) at creation time. A cap of `11000` means a ticket may never resell for more than 110% of its current holder's purchase price.
+Each event stores a `resaleCapBps` value (basis points, denominator `10000`) at creation time. A cap of `11000` means a ticket may never resell for more than 110% of its current holder's purchase price
 
 ### 3.2 Why Purchase Price, Not Face Value
 The cap is computed against `ticket.purchasePrice`  the amount the *current* holder actually paid — not the original tier price. This is deliberate:
