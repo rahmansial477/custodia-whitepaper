@@ -100,7 +100,7 @@ function checkIn(uint256 _ticketId) external // onlyOrganizer, sets checkedIn = 
 
 ## 8. Cancellation & Batch Refunds
 
-`cancelEvent()` is organizer-gated and simply flips a `cancelled` flag — it does not move funds. Refunding is a separate, explicit action via `refundAllTickets()`:
+`cancelEvent()` is organizer-gated and simply flips a `cancelled` flag it does not move funds. Refunding is a separate, explicit action via `refundAllTickets()`:
 
 ```solidity
 function refundAllTickets(uint256 _eventId) external payable eventExists(_eventId) onlyOrganizer(_eventId) {
